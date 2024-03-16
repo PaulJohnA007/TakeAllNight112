@@ -1,0 +1,89 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Main container */
+.main {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table */
+#dtr-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#dtr-table th,
+#dtr-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+#dtr-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Signature */
+.signature {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signature p {
+  margin: 5px 0;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  #dtr-table th,
+  #dtr-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .signature p {
+    font-size: 14px;
+  }
+}
