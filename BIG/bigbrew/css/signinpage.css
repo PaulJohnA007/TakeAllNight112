@@ -1,0 +1,160 @@
+/* Font import and global styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f6d365, #fda085);
+}
+
+/* Wrapper styles */
+.wrapper { 
+  width: 600px;
+  background: linear-gradient(145deg, #ffffff, #f2f2f2);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.logo{
+  width: 20vh;  
+  border-radius: 100px; 
+  margin: 20px auto 10px; /* Center the logo horizontally */
+  display: block; /* Ensure it takes the full width */
+}
+.wrapper:hover {
+  transform: translateY(-5px); /* Lift the form on hover */
+}
+
+/* Heading styles */
+.wrapper h2 {
+  text-align: center;
+  background: linear-gradient(to right,  #f6d365 45%, #fda085 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+/* Input box styles */
+.wrapper .input-box {
+  position: relative;
+  margin: 30px;
+}
+
+.input-box input {
+  width: calc(100% - 40px);
+  height: 50px;
+  background: #f9f9f9;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 20px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-box input::placeholder {
+  color: #999;
+}
+
+.input-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.input-box input:hover {
+  background-color: #f7f7f7;
+}
+
+/* Remember Me checkbox styles */
+.wrapper .remember-box {
+  justify-content: left;
+  font-size: 15px;
+  margin: 10px 40px auto;
+}
+
+.remember-box label {
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.remember-box label:hover {
+  color: #555; /* Change label color on hover */
+}
+
+.remember-box input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.remember-box input[type="checkbox"]:checked::after {
+  content: "\2713";
+  font-size: 14px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.remember-box input[type="checkbox"]:hover {
+  border-color: #999; /* Change border color on hover */
+}
+
+/* Register link styles */
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: #333;
+}
+
+/* Button styles */
+.wrapper .btn {
+  width: calc(100% - 80px);
+  height: 50px;
+  background: linear-gradient(120deg, #f6d365, #fda085);
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin: 30px 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wrapper .btn:hover {
+  background: linear-gradient(120deg, #fda085, #f6d365);
+}

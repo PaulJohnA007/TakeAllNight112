@@ -1,0 +1,124 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Main container */
+.main {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Save-btn{
+  margin-top: 20px;
+  cursor: pointer;
+--b: 3px;   /* border thickness */
+--s: .45em; /* size of the corner */
+--color: #373B44;
+
+padding: calc(.2em + var(--s)) calc(.5em + var(--s));
+color: var(--color);
+--_p: var(--s);
+background:
+  conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+  var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+transition: .3s linear, color 0s, background-color 0s;
+outline: var(--b) solid #0000;
+outline-offset: .6em;
+font-size: 16px;
+border: 0;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+.Save-btn:hover,
+.Save-btn:focus-visible{
+--_p: 0px;
+outline-color: var(--color);
+outline-offset: .05em;
+}
+
+.Save-btn:active {
+background: var(--color);
+color: #ffffff;
+}
+
+/* Table */
+#dtr-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#dtr-table th,
+#dtr-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+#dtr-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Signature */
+.signature {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signature p {
+  margin: 5px 0;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  #dtr-table th,
+  #dtr-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .signature p {
+    font-size: 14px;
+  }
+}
